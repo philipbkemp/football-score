@@ -1,1 +1,0 @@
-console.log("let's track some football scores");

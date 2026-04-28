@@ -1,1 +1,1 @@
-*{font-family:monospace;font-size:16px}.full-screen{height:100vh}
+*{font-family:monospace;font-size:16px}.full-screen{height:100vh}#summary-wrapper>div{display:flex;flex-wrap:nowrap;flex-direction:column;justify-content:flex-start;align-items:center;text-align:center}#summary-wrapper>div.is-middle{justify-content:center}#summary-wrapper>div img{height:100px;width:100px;object-fit:contain;margin-bottom:10px}

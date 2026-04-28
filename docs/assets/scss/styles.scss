@@ -6,3 +6,21 @@
 .full-screen {
     height: 100vh;
 }
+
+#summary-wrapper > div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    &.is-middle {
+        justify-content: center;
+    }
+    img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "BLVL": {
+        "key": "BLVL",
+        "name": "FC Bieles",
+        "img": "fc-bieles.png"
+    },
+    "KAER": {
+        "key": "KAER",
+        "name": "UN Käerjéng 97",
+        "img": "un-kaerjeng-97.png"
+    },
+    "UNTP": {
+        "key": "UNTP",
+        "name": "Union Titus Pétange",
+        "img": "union-titus-petange.png"
+    }
+}
