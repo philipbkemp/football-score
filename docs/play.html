@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Football Score Tracker</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center align-items-baseline full-screen">
+                <div class="col-12" id="content">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalGoal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-outline-primary w-100 mb-3" data-bs-toggle="modal" data-bs-target="#modalGoalHome" id="goalForHome">Home</button>
+                        <button type="button" class="btn btn-outline-primary w-100 mb-3" data-bs-toggle="modal" data-bs-target="#modalGoalAway" id="goalForAway">Away</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalGoalHome" tabindex="-1"aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body" id="modalGoalHomeBtns">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalGoalAway" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body" id="modalGoalAwayBtns">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/min/match.min.js" type="module"></script>
+    </body>
+</html>

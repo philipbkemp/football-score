@@ -32,3 +32,56 @@ input.form-control:read-only {
     background: #EEEEEE;
     pointer-events: none;
 }
+
+.match-team {
+    text-align: center;
+    position: relative;
+    img {
+        opacity: 0.25;
+    }
+    .match-score {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+}
+
+.score-wrap {
+    height: calc( 100vh - 220px);
+    overflow-y: auto;
+    .score {
+        ul {
+            padding: 0;
+            li {
+                list-style-type: none;
+            }
+        }
+        &-score {
+            padding: 0;
+            text-align: center;
+        }
+        &-home * {
+            text-align: right;
+        }
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    &-track {
+        background: #f1f1f1;
+    }
+    &-thumb {
+        background: #888;
+        &:hover {
+            background: #555;
+        }
+    }
+}

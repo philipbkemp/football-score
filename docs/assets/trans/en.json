@@ -1,11 +1,13 @@
 {
     "add": "+",
+    "goal": "Goal!",
     "go_next": "Next",
     "kickoff": "Kick-off",
     "name": "Name",
+    "pause": "Pause",
     "players_away": "Away players",
     "players_home": "Home players",
-    "select_away": "Away team:",
-    "select_home": "Home team:",
+    "select_away": "Away team",
+    "select_home": "Home team",
     "start_over": "Restart"
 }

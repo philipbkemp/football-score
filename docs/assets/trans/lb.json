@@ -1,11 +1,13 @@
 {
     "add": "+",
+    "goal": "Gol!",
     "go_next": "Weider",
     "kickoff": "Ustouss",
     "name": "Numm",
+    "pause": "Paus",
     "players_away": "Auswäertsspiller",
     "players_home": "Heemspiller",
-    "select_away": "Visiteuren:",
-    "select_home": "Heeméquipe:",
+    "select_away": "Visiteuren",
+    "select_home": "Heeméquipe",
     "start_over": "Nei starten"
 }
