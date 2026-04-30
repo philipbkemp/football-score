@@ -1,7 +1,9 @@
 {
     "add": "+",
+    "fulltime": "Full-time",
     "goal": "Goal!",
     "go_next": "Next",
+    "halftime": "Half-time",
     "kickoff": "Kick-off",
     "name": "Name",
     "pause": "Pause",
