@@ -1,5 +1,9 @@
 {
+    "add": "+",
     "go_next": "Étape suivante",
+    "name": "Nom",
+    "players_away": "Joueurs (visiteurs)",
+    "players_home": "Joueurs (domicile)",
     "select_away": "Visiteurs:",
     "select_home": "Équipe à domicile:",
     "start_over": "Recommencer"

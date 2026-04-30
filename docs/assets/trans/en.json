@@ -1,5 +1,9 @@
 {
+    "add": "+",
     "go_next": "Next",
+    "name": "Name",
+    "players_away": "Away players",
+    "players_home": "Home players",
     "select_away": "Away team:",
     "select_home": "Home team:",
     "start_over": "Restart"

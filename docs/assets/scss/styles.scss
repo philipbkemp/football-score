@@ -24,3 +24,11 @@
         margin-bottom: 10px;
     }
 }
+
+::placeholder {
+    opacity: 0.5 !important;
+}
+input.form-control:read-only {
+    background: #EEEEEE;
+    pointer-events: none;
+}

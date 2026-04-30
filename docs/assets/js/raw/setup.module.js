@@ -63,6 +63,7 @@ function doneFetch() {
 
     let homeTeamSelect = document.createElement("SELECT");
     homeTeamSelect.setAttribute("id","in_home");
+    homeTeamSelect.setAttribute("name","in_home");
     homeTeamSelect.classList.add("form-select","form-control");
     let homeTeamOptionEmpty = document.createElement("OPTION");
     homeTeamOptionEmpty.value = "";
@@ -97,6 +98,7 @@ function doneFetch() {
 
     let awayTeamSelect = document.createElement("SELECT");
     awayTeamSelect.setAttribute("id","in_away");
+    awayTeamSelect.setAttribute("name","in_away");
     awayTeamSelect.classList.add("form-select","form-control");
     let awayTeamOptionEmpty = document.createElement("OPTION");
     awayTeamOptionEmpty.value = "";
