@@ -137,7 +137,7 @@ function doneFetch() {
                 newAwayLine.classList.add("score-divider");
                 awayLines.append(newAwayLine);
             } else {
-                const isDigit  = /[0-9]/.test(e);
+                const isDigit  = /\d/.test(e);
                 const isLetter = /[A-Z]/.test(e);
                 if ( isDigit ) { // away goal
                     awayScore++;
@@ -146,7 +146,7 @@ function doneFetch() {
                     aLine = decodeURIComponent(params.team_away).split("|")[e];
                 } else if ( isLetter ) { // home goal
                     homeScore++;
-                    hLine = decodeURIComponent(params.team_home).split("|")[e.charCodeAt(0)-65];
+                    hLine = decodeURIComponent(params.team_home).split("|")[e.codePointAt(0)-65];
                     sLine = homeScore + "-" + awayScore;
                     aLine = "&nbsp;";
                 } else {
@@ -182,16 +182,16 @@ function doneFetch() {
     let addGoal = document.createElement("BUTTON");
     addGoal.classList.add("btn","btn-outline-primary","mt-2","w-100");
     addGoal.innerHTML = texts.goal;
-    addGoal.setAttribute("data-bs-toggle","modal");
-    addGoal.setAttribute("data-bs-target","#modalGoal");
+    addGoal.dataset.bsToggle = "modal";
+    addGoal.dataset.bsTarget = "#modalGoal";
     actionButtonOne.append(addGoal);
     let actionButtonTwo = document.createElement("DIV");
     actionButtonTwo.classList.add("col-6");
     let pauseGame = document.createElement("BUTTON");
     pauseGame.classList.add("btn","btn-outline-primary","mt-2","w-100");
     pauseGame.innerHTML = texts.pause;
-    pauseGame.setAttribute("data-bs-toggle","modal");
-    pauseGame.setAttribute("data-bs-target","#modalPause");
+    pauseGame.dataset.bsToggle = "modal";
+    pauseGame.dataset.bsTarget = "#modalPause";
     actionButtonTwo.append(pauseGame);
     actions.append(actionButtonOne);
     actions.append(actionButtonTwo);
@@ -204,10 +204,10 @@ function doneFetch() {
     decodeURIComponent(params.team_home).split("|").forEach((h,index)=>{
         let btn = document.createElement("BUTTON");
         btn.classList.add("btn","btn-outline-primary","w-100","mb-3");
-        btn.setAttribute("data-bs-dismiss","modal");
+        btn.dataset.bsDismiss = "modal";
         btn.innerHTML = h;
         btn.addEventListener("click",function(){
-            params.events += String.fromCharCode(65 + index);
+            params.events += String.fromCodePoint(65 + index);
             rebuildURL();
             homeScore++;
             homeScoreDisplay.innerHTML = homeScore;
@@ -231,7 +231,7 @@ function doneFetch() {
     decodeURIComponent(params.team_away).split("|").forEach((h,index)=>{
         let btn = document.createElement("BUTTON");
         btn.classList.add("btn","btn-outline-primary","w-100","mb-3");
-        btn.setAttribute("data-bs-dismiss","modal");
+        btn.dataset.bsDismiss = "modal";
         btn.innerHTML = h;
         btn.addEventListener("click",function(){
             params.events += index;
@@ -257,7 +257,7 @@ function doneFetch() {
     const pauseBtns = document.getElementById("modalPauseBtns");
     let pauseHalfTime = document.createElement("BUTTON");
     pauseHalfTime.classList.add("btn","btn-outline-primary","w-100","mb-3");
-    pauseHalfTime.setAttribute("data-bs-dismiss","modal");
+    pauseHalfTime.dataset.bsDismiss = "modal";
     pauseHalfTime.innerHTML = texts.halftime;
     pauseHalfTime.addEventListener("click",function(){
         params.events += "_";
@@ -278,7 +278,7 @@ function doneFetch() {
 
     let pauseFullTime = document.createElement("BUTTON");
     pauseFullTime.classList.add("btn","btn-outline-primary","w-100","mb-3");
-    pauseFullTime.setAttribute("data-bs-dismiss","modal");
+    pauseFullTime.dataset.bsDismiss = "modal";
     pauseFullTime.innerHTML = texts.fulltime;
     pauseFullTime.addEventListener("click",function(){
         params.events += "-";
