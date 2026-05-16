@@ -4,6 +4,11 @@
         "name": "FC Bieles",
         "img": "fc-bieles.png"
     },
+    "DIFF": {
+        "key": "DIFF",
+        "name": "Differdange",
+        "ung": "fc-differdange-03.png"
+    },
     "KAER": {
         "key": "KAER",
         "name": "UN Käerjéng 97",
